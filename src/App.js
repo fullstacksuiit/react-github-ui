@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import MemberTile from './MemberTile';
+import Tile from './MemberTile';
 
 function App() {
   return (
@@ -12,13 +12,13 @@ function App() {
     <button style={{ "width": "100px", "height": "30px" }} >Search</button>
       <p style={{ "text-align": "center" }}>20 Results Found</p>
 
-      <MemberTile owner='A' starCount={100}/>
+      <Tile owner='A' starCount={100}/>
       <p>&nbsp;</p>
-      <MemberTile owner='B' starCount={200}/>
+      <Tile owner='B' starCount={200}/>
       <p>&nbsp;</p>
-      <MemberTile owner='C' starCount={300}/>
+      <Tile owner='C' starCount={300}/>
       <p>&nbsp;</p>
-      <MemberTile owner='D' starCount={40}/>
+      <Tile owner='D' starCount={40}/>
       <p>&nbsp;</p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
