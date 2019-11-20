@@ -4,7 +4,7 @@ const Memmber = (props) => {
   return <div className="ui">
     <img src={props.urlOwner}/>
     <p>
-      Repo:<br />
+      Repo:{props.repoName}<br />
       Owner:{props.owner}<br />
       Fork Count:{props.forkCount}<br />Stars Count: {props.starCount}
     </p>
