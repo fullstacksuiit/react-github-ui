@@ -7,20 +7,49 @@ import githubData from './data';
 class App extends Component {
 
   state = {
-    members: githubData
+    members: githubData,
+    serchText: ''
+  }
+
+  onSearchTextChange = (e) => {
+    const text = e.target.value;
+    this.setState({
+      serchText: text
+    })
+  }
+
+  search = () => {
+    const searchText = this.state.serchText;
+    const members = this.state.members;
+    const filteredList = members.filter(d => d.login.indexOf(searchText) > -1);
+    this.setState({
+      members: filteredList
+    })
   }
 
   render() {
     const members = this.state.members;
+    const serchText = this.state.serchText;
 
     return (
       <div className="App">
         <p>&nbsp;</p>
-        <input type="text" aria-required="true" size="225" value=""
-          name="Search Repo" placeholder="Search Repo" style={{ "width": "1300px", "height": "30px" }} />&nbsp;
+        <input
+          type="text"
+          aria-required="true"
+          size="225"
+          value={serchText}
+          onChange={this.onSearchTextChange}
+          name="Search Repo"
+          placeholder="Search Repo"
+          style={{ "width": "1300px", "height": "30px" }}
+        />&nbsp;
 
-    <button style={{ "width": "100px", "height": "30px" }} >Search</button>
-        <p style={{ "text-align": "center" }}>20 Results Found</p>
+      <button
+          onClick={this.search}
+          style={{ "width": "100px", "height": "30px" }}
+        >Search</button>
+        <p style={{ "text-align": "center" }}>{members.length} Results Found</p>
         {
           members.map(d => <Tile
             urlOwner={d.avatar_url}
