@@ -20,11 +20,17 @@ class App extends Component {
 
   search = () => {
     const searchText = this.state.serchText;
-    const members = this.state.members;
-    const filteredList = members.filter(d => d.login.indexOf(searchText) > -1);
-    this.setState({
-      members: filteredList
-    })
+    if (searchText === '') {
+      this.setState({
+        members: githubData
+      })
+    } else {
+      const members = this.state.members;
+      const filteredList = members.filter(d => d.login.indexOf(searchText) > -1);
+      this.setState({
+        members: filteredList
+      })
+    }
   }
 
   render() {
