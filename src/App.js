@@ -13,14 +13,20 @@ class App extends Component {
       repoName:'PayPal_sandbox',
       owner:'A',
       forkCount:1,
-      starCount:100
+      starCount:100,
+      pullRequest:1,
+       followers:8,
+      following:1
     },
       {
       url:'https://avatars2.githubusercontent.com/u/31477944?s=400&u=f8680a0f441849fa1b363af8afe2376cd1f5ef60&v=4',
       repoName:'PayPal_sdk',
       owner:'B',
       forkCount:3,
-      starCount:200
+      starCount:200,
+      pullRequest:2,
+      followers:1,
+      following:1
     },
    
   ]
@@ -44,6 +50,9 @@ class App extends Component {
           owner={d.owner} 
           forkCount={d.forkCount} 
           starCount={d.starCount}
+          pullRequest={d.pullRequest}
+          followers={d.followers}
+          following={d.following}
           />)
       }
 
