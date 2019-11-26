@@ -59,6 +59,16 @@ const list = [
     followers: parseInt(Math.random() * 100),
     following: parseInt(Math.random() * 100),
   },
+   {
+    avatar_url: "https://avatars0.githubusercontent.com/u/9892522?v=4",
+    forks_count: 23145,
+    full_name: "freeCodeCamp/freeCodeCamp",
+    watchers_count: 306368,
+    login: "freeCodeCamp",
+    pullRequest: parseInt(Math.random() * 100),
+    followers: parseInt(Math.random() * 100),
+    following: parseInt(Math.random() * 100),
+  },
   {
     avatar_url: "https://avatars1.githubusercontent.com/u/6128107?v=4",
     forks_count: 22769,
