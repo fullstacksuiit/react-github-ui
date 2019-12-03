@@ -16,10 +16,10 @@ class App extends Component {
     this.setState({
       serchText: text
     })
+    this.search(text);
   }
 
-  search = () => {
-    const searchText = this.state.serchText;
+  search = (searchText) => {
     if (searchText === '') {
       this.setState({
         members: githubData
@@ -85,6 +85,5 @@ class App extends Component {
   }
 }
 
-
- // new line added
+// new line added
 export default App;
