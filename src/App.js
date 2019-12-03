@@ -37,12 +37,7 @@ class App extends Component {
   render() {
     const members = this.state.members;
     const serchText = this.state.serchText;
-    let filteredList = this.props.list.filter(
-    (lists) => {
-      return lists.full_name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
-    }
-
-);
+   
     return (
       <div className="App">
         <p>&nbsp;</p>
