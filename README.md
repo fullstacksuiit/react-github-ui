@@ -1,4 +1,4 @@
-Project Link : https://github-ui-2ed74.firebaseapp.com/
+Project Link : https://practical-rosalind-2fcac9.netlify.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
