@@ -1,4 +1,4 @@
-Project Link : https://practical-rosalind-2fcac9.netlify.com/
+Project Link : https://github-ui.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
